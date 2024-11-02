@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pomabanners/static/css/main.e471003e.css",
+    "main.js": "/pomabanners/static/js/main.27a7b8db.js",
+    "static/js/453.b43744f7.chunk.js": "/pomabanners/static/js/453.b43744f7.chunk.js",
+    "static/media/bg_1.jpg": "/pomabanners/static/media/bg_1.0789121cebd360d328d1.jpg",
+    "index.html": "/pomabanners/index.html",
+    "main.e471003e.css.map": "/pomabanners/static/css/main.e471003e.css.map",
+    "main.27a7b8db.js.map": "/pomabanners/static/js/main.27a7b8db.js.map",
+    "453.b43744f7.chunk.js.map": "/pomabanners/static/js/453.b43744f7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e471003e.css",
+    "static/js/main.27a7b8db.js"
+  ]
+}
