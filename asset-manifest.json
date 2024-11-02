@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pomabanners/static/css/main.df91a5ea.css",
-    "main.js": "/pomabanners/static/js/main.a02418fa.js",
+    "main.js": "/pomabanners/static/js/main.047ddf90.js",
     "static/js/453.b43744f7.chunk.js": "/pomabanners/static/js/453.b43744f7.chunk.js",
     "static/media/bg_1.jpg": "/pomabanners/static/media/bg_1.0789121cebd360d328d1.jpg",
     "index.html": "/pomabanners/index.html",
     "main.df91a5ea.css.map": "/pomabanners/static/css/main.df91a5ea.css.map",
-    "main.a02418fa.js.map": "/pomabanners/static/js/main.a02418fa.js.map",
+    "main.047ddf90.js.map": "/pomabanners/static/js/main.047ddf90.js.map",
     "453.b43744f7.chunk.js.map": "/pomabanners/static/js/453.b43744f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df91a5ea.css",
-    "static/js/main.a02418fa.js"
+    "static/js/main.047ddf90.js"
   ]
 }
