@@ -128,8 +128,9 @@ const Home = () => {
                 </div>
                     <CharacterNotesContainer characters={characters} />
                 <ul>
+                    <li>We are currently working on another format to replace the double letter grading on the graphic, to better showcase investment value & ceiling.</li>
                     <li>The new Ingo & Emmet act as team utility with various effects tied the state of the opponent their attacking, they aren't specifically limited to just partnering with each other. There are various combinations that work well together with many different sync pairs.</li>
-                    <li>Each Eeveelution offers different perks and utility on their respective teams. They are designed with repeately using their sync move to maintain upkeep of their respective field effects. Since their sync tends the to be very important, investing to unlock their sync grid is a typical consideration. However you can leverage their perks in teams who already set & extend their respective fields. </li>
+                    <li>Each Variety Eeveelution offers different perks and utility on their respective teams. They are designed with repeately using their sync move to maintain upkeep of their respective field effects. Since their sync tends the to be very important, investing to unlock their sync grid is a typical consideration. However you can leverage their perks in teams who already set & extend their respective fields. </li>
                     <li>Due to Number of Sync Pairs available we've decided to not rank these Eevee pairs for the following reasons:</li>
                         <ul>
                             <li>Multi-Feature Rate is significantly worse for the rerun Eeveelution Banner, with a 0.4% per featured sync pair on the 5-split banner.</li>
