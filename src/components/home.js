@@ -90,6 +90,7 @@ const Home = () => {
             <div className={`dropdown ${isOpen ? 'open' : ''}`}>
                 <h2>⚠ Please Read ⚠</h2>
                 <ul>
+                    <li>This is not a unit tier list.</li>
                     <li>These rankings are largely catered towards new & casual players; your personal preferences may differ based on playstyle and roster.</li>
                     <li>Banners are ordered top to bottom to show how much value we estimate they hold for you.</li>
                     <li>The letter ranks are relative and compare the value of each pair for this month's banners only, while focusing on their 1/5 base kits.</li>
