@@ -56,7 +56,7 @@ const Home = () => {
         },
         { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/marnie.png`, 
-            text: "Marnie's base passives make him an ideal augmenters that doesn't rely on Supports for their offensive stats. She can apply her respective field effect a total of 4 times (if you EX her) and apply a Galar Circle with each one! She uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Marnie focuses on Sunny Weather. Burn, and Def & Sp.Def debuffs with Galar Circle (Defensive). She is flexible, as she has both Defense Circle + Def ↓ & Sp. Def ↓ Debuffs.",
+            text: "Marnie's base passives make her an ideal augmenters that doesn't rely on Supports for their offensive stats. She can apply her respective field effect a total of 4 times (if you EX her) and apply a Galar Circle with each one! She uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Marnie focuses on Sunny Weather. Burn, and Def & Sp.Def debuffs with Galar Circle (Defensive). She is flexible, as she has both Defense Circle + Def ↓ & Sp. Def ↓ Debuffs.",
             name: 'Marnie & Cinderace', 
             link: 'https://ng-pomatools.web.app/pairs/24500/81500?s=5&l=140&r=5&p=0&a=0&g=AAECAwQFCQsNDxETFhgoKiwt' 
         },
@@ -145,7 +145,7 @@ const Home = () => {
                     alt="Chart" 
                     className="chartImage"/>
                 <div className='graphicNotes'>
-                    <a href="https://i.imgur.com/qFHPp9o.png" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
+                    <a href="https://i.imgur.com/SAvc1yT.png" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
                     <a href="https://www.flickr.com/photos/167060966@N06/sets/72177720317637402" target="_blank" rel="noreferrer"><h3>Album of all previous charts</h3></a>
                 </div>
             </div>
