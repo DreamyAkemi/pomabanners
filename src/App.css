@@ -1,5 +1,7 @@
 /*GENERAL STUFF*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
   -webkit-tap-highlight-color: transparent; 
   touch-action: manipulation;
@@ -13,7 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../public/img/bg_1.jpg'); 
+  background-image: url('../public/img/bg_2.jpg'); 
   background-color: #282c34;
   background-size: cover; 
   background-position: center; 
@@ -67,6 +69,10 @@ a:visited {
   transition: background-color, 0.5s ease-in-out;
 }
 
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 h2 {
   text-align: center;
   color: red;
@@ -81,6 +87,8 @@ h3 {
 .introSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .introText {
@@ -91,12 +99,28 @@ h3 {
 
 .introToggle {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
   padding-bottom: 15px;
   font-size: 0.8em;
+  width: 50%;
+}
+
+.darkModeButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.snowButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
 }
 
 .titleImage {
@@ -106,6 +130,61 @@ h3 {
   display: block;  
   margin: 0 auto; 
 }
+
+
+/* SLIDER */
+
+.toggle-switch {
+  width: 50px;
+  height: 24px;
+  background-color: currentColor; 
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider {
+  width: 24px;
+  height: 24px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  left: 27px; 
+  transition: all 0.3s;
+}
+
+.toggle-switch.light {
+  background-color: #ccc; 
+}
+
+.slider.light {
+  left: 0px; 
+}
+
+
+/* SNOW BUTTON */
+
+.toggle-snow {
+  width: 50px;                
+  height: 24px;               
+  background-color: gray;  
+  border-radius: 25px;      
+  cursor: pointer;        
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; 
+}
+
+.toggle-snow:hover {
+  background-color: #2980b9; 
+  transform: scale(1.05);    
+}
+
+.toggle-snow:active {
+  transform: scale(0.95);    
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
 
 /*DISCLAIMER SECTION*/
 
@@ -171,23 +250,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.notesButton {
-  display: inline-block;
-  padding: 5px 10px;
-  margin-bottom: 20px;
-  background-color: #ffe392;
-  color: #282c34;
-  border: none;
-  text-align: center;
-  font-size: 13px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.notesButton:hover {
-  background-color: #fbae32;
 }
 
 .characters-wrapper {
@@ -290,8 +352,8 @@ h3 {
 .dropdownToggle {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ffe392;
-  color: #282c34;
+  background-color: #e5c4a3;
+  color: #534236;
   border: none;
   text-align: center;
   font-size: 16px;
@@ -302,7 +364,25 @@ h3 {
 }
 
 .dropdownToggle:hover {
-  background-color: #fbae32;
+  background-color: #c6a5a0;
+}
+
+.notesButton {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background-color: #e5c4a3;
+  color: #534236;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.notesButton:hover {
+  background-color: #c6a5a0;
 }
 
 /*FOOTER*/
@@ -346,53 +426,21 @@ h3 {
 
 .container.light .dropdownToggle{
   color: #f9f9f9;
-  background-color: #1199ee;
+  background-color: #7ba3b1;
 }
 
 .container.light .dropdownToggle:hover {
-  background-color: #5d76ec;
+  background-color: #507295;
 }
 
 .container.light .notesButton {
-  background-color: #1199ee;
+  background-color: #7ba3b1;
   color: white;
 }
 
 .container.light .notesButton:hover {
-  background-color: #5d76ec;
+  background-color: #507295;
 }
-
-
-/* DARK MODE */
-
-.toggle-switch {
-  width: 50px;
-  height: 24px;
-  background-color: currentColor; 
-  border-radius: 50px;
-  position: relative;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.slider {
-  width: 24px;
-  height: 24px;
-  background-color: gray;
-  border-radius: 50%;
-  position: absolute;
-  left: 27px; 
-  transition: all 0.3s;
-}
-
-.toggle-switch.light {
-  background-color: #ccc; 
-}
-
-.slider.light {
-  left: 0px; 
-}
-
 
 /*RESPONSIVE*/
 

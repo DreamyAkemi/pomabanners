@@ -9,7 +9,7 @@ const CharacterNote = ({ portrait, text, name, link, isExpanded, onToggle }) => 
             {isExpanded && (
                 <div className="text-container">
                     <h3>
-                        <a href={link} target="_blank" rel="noopener noreferrer">
+                        <a href={link} target="_blank" rel="noopener noreferrer" alt="click for example sync grid">
                             {name}
                         </a>
                     </h3>

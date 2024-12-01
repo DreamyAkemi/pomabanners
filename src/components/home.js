@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import DarkModeToggle from './darklight';
 import CharacterNotesContainer from './characterNotes';
+import Snow from './snow';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(true);
@@ -18,16 +19,34 @@ const Home = () => {
 
     const characters = [
         { 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/blue.png`, 
+            text: "Blue set a new standard when it comes to tanking during his initial release, especially in difficult content, being able to raise the DEF & Sp.DEF of allies continuously is something that is incredibly helpful in difficult battle challenges where the opponent's debuff your stats. Blue also empowers all ally sync damage by an additional 20% for an added benefit, and then we have his buddy move: Thundering Wings Roost. An incredible healing move that allows Blue to continue to survive arduous content. If you invest in him you'll get constant Offensive debuffs, more reliable paralysis, sync healing, and more utility.",
+            name: 'Blue & Zapdos', 
+            link: 'https://ng-pomatools.web.app/pairs/2103/14500?s=3&l=150&r=6&p=0&a=17010801&g=AAECAwQFBggLDQ4QGRocHyIv&x=true' 
+        },
+        { 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/red.png`, 
+            text: "Red serves as an incredible offensive presence on teams, where he can constantly amplify his own damage after attacking and has tools to stack up multiple Sp.Move ↑ Next effects to unleash a powerful back-to-back combo of a boosted sync move & devastating blow from either Blizzard or his Frozen Wings Ice Beam. In addition to all that, his Buddy Move acts as a denial tool in non-resilient content. When invested Red can access more utility and damage enhancements; such as setting Hail, lowering accuracy, and stacking more SMUN", 
+            name: 'Red & Articuno', 
+            link: 'https://ng-pomatools.web.app/pairs/3/14400?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFDA8fISIkKCstLi8&x=true' 
+        },
+        { 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/leaf.png`, 
+            text: "Moltres provides an tools that help in countering different stages. Sunny weather to enhance fire-type damage and to make the team immune from status conditions and interferences, multiple debuffs on all targets, Potion, on top of Support ex role. When invested you'll gain access to sync acceleration, multi-target confusion, sunny weather extension, and empowering her great sync move. Leaf is provides so much in just one team slot.", 
+            name: 'Leaf & Moltres', 
+            link: 'https://ng-pomatools.web.app/pairs/1701/14600?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFHSAiIyUpKywtLi8' 
+        },
+        { 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/leon.png`, 
+            text: "Despite having the Tech EX Role, Leon is very much just built more like a strike pair, his focus is on dealing damage. In Fire-type teams he'll provide Fire Rebuff, the Burn Status Condition, and hitting all opponent's with his sync & max move. At higher investment he can lower burned opponent's ATK & SP.DEF and improve his utility in Sunny weather. At max investment he empowers his damage more with Sp. Move ↑ Next and Sync Move ↑ Next. He'll be a great damage dealer to add to your roster.", 
+            name: 'Leon & Charizard', 
+            link: 'https://ng-pomatools.web.app/pairs/24704/600?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFBgcKFBYaHB4gISInKDAyMw' 
+        },
+        { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/adaman.png`, 
             text: "Currently, he's uncontested in Grass-type sync damage. Applying -2 rebuff can take a couple of turns, but thanks to its 2 uses, you can preserve one in case a stage has status change clearing gimmicks. He's very straightforward with a 1 turn setup, a 100% crit chance and his sync multiplier conditions aren't dependent on external factors like debuffs. Adaman also has the ability to set sun on each sync, which can be combo'd with his sun extension for longer durations.",
             name: 'Adaman & Leafeon', 
             link: 'https://ng-pomatools.web.app/pairs/28400/47000?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFBggLDh0gKSotLg&x=true' 
-        },
-        { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/dexio.png`, 
-            text: "Dexio is an impressive Psychic-type offensive unit, sporting high BP moves and debuffs for his offensive abilities. Psychic Light of the Dawn is a very strong buddy move, and it can be used continuously as long as you have berry MP. Once the berry MP runs out Dexio can regain 1 MP on the B-move from any team member's sync for the duration of the battle. Dexio serves as very good single target damage in the team.", 
-            name: 'Dexio & Espeon', 
-            link: 'https://ng-pomatools.web.app/pairs/18800/19600?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFERMWGx4pKy8yNDU&x=true' 
         },
         { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/irida.png`, 
@@ -36,34 +55,40 @@ const Home = () => {
             link: 'https://ng-pomatools.web.app/pairs/28500/47100?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFBggLDhUYKSwtLg&x=true' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/ssserena.png`, 
-            text: "Serena still sports impressive damage thanks to her stat line and easy 50% multiplier, restrain also counts as a negative status change for stage gimmicks as a substitute for rebuff. Her ability to become immune to stat drops and never miss makes her ideal for any stages that try to affect move accuracy or debuff the player.", 
-            name: 'Serena & Zygarde', 
-            link: 'https://ng-pomatools.web.app/pairs/13002/71800?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFBgsMDRARFCgrLS4v&x=true' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/marnie.png`, 
+            text: "Marnie's base passives make him an ideal augmenters that doesn't rely on Supports for their offensive stats. She can apply her respective field effect a total of 4 times (if you EX her) and apply a Galar Circle with each one! She uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Marnie focuses on Sunny Weather. Burn, and Def & Sp.Def debuffs with Galar Circle (Defensive). She is flexible, as she has both Defense Circle + Def ↓ & Sp. Def ↓ Debuffs.",
+            name: 'Marnie & Cinderace', 
+            link: 'https://ng-pomatools.web.app/pairs/24500/81500?s=5&l=140&r=5&p=0&a=0&g=AAECAwQFCQsNDxETFhgoKiwt' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/ssingo.png`, 
-            text: "Ingo offers burn/confusion, sync acceleration, team spec. move ups, and team speed+eva all wrapped up in a self-sufficient bow. He's someone you'd want on the team to check off gimmicks while contributing to the team with every action. With investment he gains access to more consistent debuffs and status conditions unavailable at 1/5.",
-            name: 'Ingo & Chandelure', 
-            link: 'https://ng-pomatools.web.app/pairs/10802/60900?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFDhATGB4hJCcpKi0wMw&x=true' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/bede.png`, 
+            text: "Bede's base passives make him an ideal augmenters that doesn't rely on Supports for their offensive stats. He can apply his respective field effect a total of 4 times (if you EX him) and apply a Galar Circle with each one! He uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Bede focuses on Rainy Weather, Sp. Def debuffs, with Galar Circle (Special). He doubles down on Special Damage, the majority of the water-type cast are Special Damage, so he'll fit in nicely with many different pairs.", 
+            name: 'Bede & Inteleon', 
+            link: 'https://ng-pomatools.web.app/pairs/24600/81800?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFCQoNDxETFhkoKi0' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/sina.png`, 
-            text: "An offensive Ice-type sporting an AoE Piercing Blows Buddy move. Sina has a big emphasis on sync acceleration, with her trainer move and once she exhausts her berries. Beautiful Icy Wind is empowered greatly each time she consumes a berry, however once she runs out of berries she loses a bit of steam. When compared to Dexio her B-move does not have the refresh playstyle at the cost of being weaker.", 
-            name: 'Sina & Glaceon', 
-            link: 'https://ng-pomatools.web.app/pairs/18700/47100?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFHiEkJygpLC8yMzQ1&x=true' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/hop.png`, 
+            text: "Hop's base passives make him an ideal augmenters that doesn't rely on Supports for their offensive stats. He can apply his respective field effect a total of 4 times (if you EX him) and apply a Galar Circle with each one! He uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Hop focuses on Grassy Terrain, Speed Debuffs, with Galar Circle (Physical). He works well with physical grass type, he's also handy pairs with Speed ↓ as their multipliers, such as Greta & and most notably, Victor.", 
+            name: 'Hop & Rilaboom', 
+            link: 'https://ng-pomatools.web.app/pairs/24400/81200?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFCQsNGhseISQoKiw' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/eri.png`, 
-            text: "Eri is a tank with reliable sustain that can continously heal damage taken, and overtime buff allies while taking hits. Her free gauge usage is tied directly to any Circle field being active. She is mainly catered towards teams that use physical moves, but Paldea Defensive Circle allows her to flex where needed as a defensive option. With investment she can buff & debuff offenses as well as extend the Circle effect.", 
-            name: 'Eri & Anihilape', 
-            link: 'https://ng-pomatools.web.app/pairs/33000/97900?s=3&l=140&r=5&p=0&a=15010301&g=AAECAwQFDA4QERQZGh0eLC8xMw' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/lillie.png`, 
+            text: "Shiny Primarina is offering an offensive utility hybrid package. She offers the Sing Status move, an empowered Moonblast and Disarming Voice, sync acceleration and self-sufficiency. Her kit lends itself pretty well to the Damage Challenge mode as she provides sync accel, speed buffs, and Supereffective ↑ Next to her allies on top of having Support EX Role. She lacks the typical team augments (WTZ, Rebuff, Circle) but brings 20% move damage increase to allies when the their speed is raised.", 
+            name: 'Lillie & Primarina', 
+            link: 'https://ng-pomatools.web.app/pairs/11805/73001?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFCQwOEhUXKSwuLw' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/ssemmet.png`, 
-            text: "Emmet offers paralysis/trap, field effects like Unova Defensive Circle and Electric Terrain, and a 1 use Trainer Move used to empower the sync of an ally. Like Ingo, Emmet's goal is to provide utility with the various effects he can get off his Buddy move. Compared to Ingo, Emmet has a more direct but limited duration method of boosting his allies' damage.", 
-            name: 'Emmet & Eelektross', 
-            link: 'https://ng-pomatools.web.app/pairs/10902/60400?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFFRYYGx4gIiUoKi0uLzA0&x=true' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/bugsy.png`, 
+            text: "Bugsy sports Johto Circle (Defensive) & Bug Zone for his allies. At base he covers defensive buffs and several categories of debuffs and provides team sustain with B Leech Life. With investment he can buff offenses, and regain MP after syncing. Main concern would be the length animation of his Leech Life without Circle extension.", 
+            name: 'Bugsy & Kricketune', 
+            link: 'https://ng-pomatools.web.app/pairs/4501/40200?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFBggLDhATFhkaHB8i' 
+        },
+        { 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/milo.png`, 
+            text: "A physical-oriented grass support who has a unique sync acceleration effect that can be utilized by a team of MAX move users. Milo's main appeal is an abundance of Speed Debuffs as the Pokémon is themed around Cotton Spore. At base Milo offers a one-time non-extended Grassy Terrain, offensive buffs, and speed debuffs. At higher investment you'll receive more utility such as Poison/Para on contact, Terrain Extension, and your typical support Utility. For defensive buffing Milo requires 4/5 so keep that in mind.", 
+            name: 'Milo & Eldegoss', 
+            link: 'https://ng-pomatools.web.app/pairs/24800/83000?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFDA4RFBYfICIsLjAzNQ' 
         },
     ];
 
@@ -79,14 +104,20 @@ const Home = () => {
                     <p>Welcome to the Banner Priority Ranking chart! This resource is the result of a collaborative effort by several veterans from the subreddit’s Discord server. It was created in response to strong feedback from newcomers who needed guidance on which banners to pull from, given the large number of pairs available each month. You can collapse each section of this website by clicking on their title! Happy browsing.</p>
                 </div>
                 <div className='introToggle'>
-                    <DarkModeToggle toggleTheme={toggleTheme} />
-                    {isLightMode ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+                    <div className='darkModeButton'>
+                        <DarkModeToggle toggleTheme={toggleTheme} />
+                        {isLightMode ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+                    </div>
+                    <div className='snowButton'>
+                        <Snow/>
+                        Surprise!
+                    </div>
                 </div>
             </div>
 
 
         <div className='disclaimersSection'>
-            <h1 onClick={toggleDropdown} className="dropdownToggle">Disclaimers</h1>
+            <h1 onClick={toggleDropdown} className="dropdownToggle">DISCLAIMERS</h1>
             <div className={`dropdown ${isOpen ? 'open' : ''}`}>
                 <h2>⚠ Please Read ⚠</h2>
                 <ul>
@@ -106,15 +137,15 @@ const Home = () => {
  
 
         <div className='rankingsSection'>
-            <h1 onClick={toggleInfographicDropdown} className="dropdownToggle">Rankings</h1>
+            <h1 onClick={toggleInfographicDropdown} className="dropdownToggle">RANKINGS</h1>
             <div className={`dropdown ${isInfographicOpen ? 'open' : ''}`}>
-                <h3>November 2024</h3>
+                <h3>December 2024</h3>
                 <img 
                     src={`${process.env.PUBLIC_URL}/img/rankings.png`} 
                     alt="Chart" 
                     className="chartImage"/>
                 <div className='graphicNotes'>
-                    <a href="https://i.imgur.com/QFF3k0Z.jpeg" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
+                    <a href="https://i.imgur.com/Ba66b96.png" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
                     <a href="https://www.flickr.com/photos/167060966@N06/sets/72177720317637402" target="_blank" rel="noreferrer"><h3>Album of all previous charts</h3></a>
                 </div>
             </div>
@@ -122,22 +153,13 @@ const Home = () => {
 
 
         <div className='notesSection'>
-            <h1 onClick={toggleNotesDropdown} className="dropdownToggle">Notes</h1>
+            <h1 onClick={toggleNotesDropdown} className="dropdownToggle">NOTES</h1>
             <div className={`dropdown ${isNotesOpen ? 'open' : ''}`}>
                 <div className='notesContainer'>
-                     <p>Click a pair's portrait below for a short summary of what they offer!</p>
+                     <p>Click a pair's portrait below for a short summary of what they offer! An example grid can be found by clicking their names.</p>
                 </div>
                     <CharacterNotesContainer characters={characters} />
-                <ul>
-                    <li>We are currently working on another format to replace the double letter grading on the graphic, to better showcase investment value & ceiling.</li>
-                    <li>The new Ingo & Emmet act as team utility with various effects tied the state of the opponent their attacking, they aren't specifically limited to just partnering with each other. There are various combinations that work well together with many different sync pairs.</li>
-                    <li>Each Variety Eeveelution offers different perks and utility on their respective teams. They are designed with repeately using their sync move to maintain upkeep of their respective field effects. Since their sync tends the to be very important, investing to unlock their sync grid is a typical consideration. However you can leverage their perks in teams who already set & extend their respective fields. </li>
-                    <li>Due to Number of Sync Pairs available we've decided to not rank these Eevee pairs for the following reasons:</li>
-                        <ul>
-                            <li>Multi-Feature Rate is significantly worse for the rerun Eeveelution Banner, with a 0.4% per featured sync pair on the 5-split banner.</li>
-                            <li>Their Field Effect Maintenance requires using their own Sync Move, which at base will be lacking and are considered to be either recommended for investment or used alongside other WTZ setters. Which for a new player will be harder to recommend overall.</li>
-                        </ul>
-                </ul>
+
             </div>
          </div>
 
