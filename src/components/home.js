@@ -32,7 +32,7 @@ const Home = () => {
         },
         { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/leaf.png`, 
-            text: "Moltres provides an tools that help in countering different stages. Sunny weather to enhance fire-type damage and to make the team immune from status conditions and interferences, multiple debuffs on all targets, Potion, on top of Support ex role. When invested you'll gain access to sync acceleration, multi-target confusion, sunny weather extension, and empowering her great sync move. Leaf is provides so much in just one team slot.", 
+            text: "Moltres provides tools that help in countering different stages. Sunny weather to enhance fire-type damage and to make the team immune from status conditions and interferences, multiple debuffs on all targets, Potion, on top of Support ex role. When invested you'll gain access to sync acceleration, multi-target confusion, sunny weather extension, and empowering her great sync move. Leaf offers a lot in just one team slot.", 
             name: 'Leaf & Moltres', 
             link: 'https://ng-pomatools.web.app/pairs/1701/14600?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFHSAiIyUpKywtLi8' 
         },
