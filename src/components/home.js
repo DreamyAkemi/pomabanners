@@ -145,7 +145,7 @@ const Home = () => {
                     alt="Chart" 
                     className="chartImage"/>
                 <div className='graphicNotes'>
-                    <a href="https://i.imgur.com/Ba66b96.png" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
+                    <a href="https://i.imgur.com/qFHPp9o.png" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
                     <a href="https://www.flickr.com/photos/167060966@N06/sets/72177720317637402" target="_blank" rel="noreferrer"><h3>Album of all previous charts</h3></a>
                 </div>
             </div>
