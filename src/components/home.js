@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../App.css';
 import DarkModeToggle from './darklight';
 import CharacterNotesContainer from './characterNotes';
-import Snow from './snow';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(true);
@@ -37,58 +36,34 @@ const Home = () => {
             link: 'https://ng-pomatools.web.app/pairs/1701/14600?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFHSAiIyUpKywtLi8' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/leon.png`, 
-            text: "Despite having the Tech EX Role, Leon is very much just built more like a strike pair, his focus is on dealing damage. In Fire-type teams he'll provide Fire Rebuff, the Burn Status Condition, and hitting all opponent's with his sync & max move. At higher investment he can lower burned opponent's ATK & SP.DEF and improve his utility in Sunny weather. At max investment he empowers his damage more with Sp. Move ↑ Next and Sync Move ↑ Next. He'll be a great damage dealer to add to your roster.", 
-            name: 'Leon & Charizard', 
-            link: 'https://ng-pomatools.web.app/pairs/24704/600?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFBgcKFBYaHB4gISInKDAyMw' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/giovanni.png`, 
+            text: "Guzzlord's supportive traits focuses on providing stat raises, and sync up next stacks to allies. The playstyle involves using Stockpile to raise defenses, and then spend his defensive stats on either healing all allies or dealing damage and lowering defenses. The pair is actually pretty generically flexible, and only really benefits dark teams with the field ex role. An unexplored facet is how 'Take All' Next will impact gameplay, there maybe new ways to clear thanks to this effect. Just note he'll be expecting his allies to counter stage threats such as status effects, debuffs, or immunities.", 
+            name: 'Giovanni & Guzzlord', 
+            link: '' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/adaman.png`, 
-            text: "Currently, he's uncontested in Grass-type sync damage. Applying -2 rebuff can take a couple of turns, but thanks to its 2 uses, you can preserve one in case a stage has status change clearing gimmicks. He's very straightforward with a 1 turn setup, a 100% crit chance and his sync multiplier conditions aren't dependent on external factors like debuffs. Adaman also has the ability to set sun on each sync, which can be combo'd with his sun extension for longer durations.",
-            name: 'Adaman & Leafeon', 
-            link: 'https://ng-pomatools.web.app/pairs/28400/47000?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFBggLDh0gKSotLg&x=true' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/mela.png`, 
+            text: "This pair is a damage dealer who focuses on lowering its own defenses in order to deal high damage with the Buddy Move. It effectively serves as an aoe sync move that can double in power if your at max lowered defense. The issue will mainly be avoiding partnering with allies who grant defense buffs, and timing your mystical fire before eating an enemy’s big move with lowered defenses. She only debuffs -1 each turn at base, so getting the max value out her move isn’t too feasible except in longer content.", 
+            name: 'Mela & Armarouge', 
+            link: '' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/irida.png`, 
-            text: "Irida is one of the best partners to have in an Ice-type team compressing Hail & Ice Zone into one button and team slot. She provides AoE debuffs, team damage bonus, and sports a strong 1-use buddy move to burst down or setup a target for a follow-up.", 
-            name: 'Irida & Glaceon', 
-            link: 'https://ng-pomatools.web.app/pairs/28500/47100?s=3&l=150&r=6&p=0&a=13010602&g=AAECAwQFBggLDhUYKSwtLg&x=true' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/atticus.png`, 
+            text: "This pair is a support who provides both damage reduction and enhancement while its currently exclusive Poison Damage Field is active. It also lowers Poison rebuff for all opponents by -2, making it an excellent boost for poison based teams. Tools like flinch and potion do help for main supportive functions. If you want additional Poison DF, you’ll have to get 3/5.", 
+            name: 'Atticus & Revavroom', 
+            link: '' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/marnie.png`, 
-            text: "Marnie's base passives make her an ideal augmenters that doesn't rely on Supports for their offensive stats. She can apply her respective field effect a total of 4 times (if you EX her) and apply a Galar Circle with each one! She uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Marnie focuses on Sunny Weather. Burn, and Def & Sp.Def debuffs with Galar Circle (Defensive). She is flexible, as she has both Defense Circle + Def ↓ & Sp. Def ↓ Debuffs.",
-            name: 'Marnie & Cinderace', 
-            link: 'https://ng-pomatools.web.app/pairs/24500/81500?s=5&l=140&r=5&p=0&a=0&g=AAECAwQFCQsNDxETFhgoKiwt' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/poppy.png`, 
+            text: "Poppy is a field pair that is more so focused on her buffing and debuffing with her Buddy Move then about being a strong sync contender. Taking care of opponent offenses, ally defenses, and both sides speed stats makes her very handy for stat rank checks. With base extension built in, and 3 settings of steel zone she’s a great option as DPS utility option for steel teams.", 
+            name: 'Poppy & Steelix', 
+            link: '' 
         },
         { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/bede.png`, 
-            text: "Bede's base passives make him an ideal augmenters that doesn't rely on Supports for their offensive stats. He can apply his respective field effect a total of 4 times (if you EX him) and apply a Galar Circle with each one! He uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Bede focuses on Rainy Weather, Sp. Def debuffs, with Galar Circle (Special). He doubles down on Special Damage, the majority of the water-type cast are Special Damage, so he'll fit in nicely with many different pairs.", 
-            name: 'Bede & Inteleon', 
-            link: 'https://ng-pomatools.web.app/pairs/24600/81800?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFCQoNDxETFhkoKi0' 
-        },
-        { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/hop.png`, 
-            text: "Hop's base passives make him an ideal augmenters that doesn't rely on Supports for their offensive stats. He can apply his respective field effect a total of 4 times (if you EX him) and apply a Galar Circle with each one! He uses little gauge and applies Supereffective ↑ Next & Sync Accel to allies. Hop focuses on Grassy Terrain, Speed Debuffs, with Galar Circle (Physical). He works well with physical grass type, he's also handy pairs with Speed ↓ as their multipliers, such as Greta & and most notably, Victor.", 
-            name: 'Hop & Rilaboom', 
-            link: 'https://ng-pomatools.web.app/pairs/24400/81200?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFCQsNGhseISQoKiw' 
-        },
-        { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/lillie.png`, 
-            text: "Shiny Primarina is offering an offensive utility hybrid package. She offers the Sing Status move, an empowered Moonblast and Disarming Voice, sync acceleration and self-sufficiency. Her kit lends itself pretty well to the Damage Challenge mode as she provides sync accel, speed buffs, and Supereffective ↑ Next to her allies on top of having Support EX Role. She lacks the typical team augments (WTZ, Rebuff, Circle) but brings 20% move damage increase to allies when the their speed is raised.", 
-            name: 'Lillie & Primarina', 
-            link: 'https://ng-pomatools.web.app/pairs/11805/73001?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFCQwOEhUXKSwuLw' 
-        },
-        { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/bugsy.png`, 
-            text: "Bugsy sports Johto Circle (Defensive) & Bug Zone for his allies. At base he covers defensive buffs and several categories of debuffs and provides team sustain with B Leech Life. With investment he can buff offenses, and regain MP after syncing. Main concern would be the length animation of his Leech Life without Circle extension.", 
-            name: 'Bugsy & Kricketune', 
-            link: 'https://ng-pomatools.web.app/pairs/4501/40200?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFBggLDhATFhkaHB8i' 
-        },
-        { 
-            portrait: `${process.env.PUBLIC_URL}/img/pairs/milo.png`, 
-            text: "A physical-oriented grass support who has a unique sync acceleration effect that can be utilized by a team of MAX move users. Milo's main appeal is an abundance of Speed Debuffs as the Pokémon is themed around Cotton Spore. At base Milo offers a one-time non-extended Grassy Terrain, offensive buffs, and speed debuffs. At higher investment you'll receive more utility such as Poison/Para on contact, Terrain Extension, and your typical support Utility. For defensive buffing Milo requires 4/5 so keep that in mind.", 
-            name: 'Milo & Eldegoss', 
-            link: 'https://ng-pomatools.web.app/pairs/24800/83000?s=3&l=140&r=5&p=0&a=0&g=AAECAwQFDA4RFBYfICIsLjAzNQ' 
+            portrait: `${process.env.PUBLIC_URL}/img/pairs/raihan.png`, 
+            text: "Raihan is a support pair with a potential to have infinite sandstorm when hit, however the kit is designed around dodging attack moves to buff stats, heal himself, charge gauge, and power allies with move up nexts. The buddy move has impressive range of debuffs and replicable status condition. One glaring issue is that hard encounters often have Piercing Gaze which nullifies Sandaconda’a perks.", 
+            name: 'Raihan & Sandaconda', 
+            link: '' 
         },
     ];
 
@@ -107,10 +82,6 @@ const Home = () => {
                     <div className='darkModeButton'>
                         <DarkModeToggle toggleTheme={toggleTheme} />
                         {isLightMode ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
-                    </div>
-                    <div className='snowButton'>
-                        <Snow/>
-                        Surprise!
                     </div>
                 </div>
             </div>
@@ -139,13 +110,13 @@ const Home = () => {
         <div className='rankingsSection'>
             <h1 onClick={toggleInfographicDropdown} className="dropdownToggle">RANKINGS</h1>
             <div className={`dropdown ${isInfographicOpen ? 'open' : ''}`}>
-                <h3>December 2024</h3>
+                <h3>January 2025</h3>
                 <img 
                     src={`${process.env.PUBLIC_URL}/img/rankings.png`} 
                     alt="Chart" 
                     className="chartImage"/>
                 <div className='graphicNotes'>
-                    <a href="https://i.imgur.com/SAvc1yT.png" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
+                    <a href="https://i.imgur.com/kCXsKPQ.png" target="_blank" rel="noreferrer"><h3>Download the Full Image</h3></a>
                     <a href="https://www.flickr.com/photos/167060966@N06/sets/72177720317637402" target="_blank" rel="noreferrer"><h3>Album of all previous charts</h3></a>
                 </div>
             </div>

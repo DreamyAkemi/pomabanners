@@ -352,8 +352,8 @@ h3 {
 .dropdownToggle {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #e5c4a3;
-  color: #534236;
+  background-color: #614baf;
+  color: #ffffff;
   border: none;
   text-align: center;
   font-size: 16px;
@@ -364,15 +364,15 @@ h3 {
 }
 
 .dropdownToggle:hover {
-  background-color: #c6a5a0;
+  background-color: #3b3a3f;
 }
 
 .notesButton {
   display: inline-block;
   padding: 5px 10px;
   margin-bottom: 20px;
-  background-color: #e5c4a3;
-  color: #534236;
+  background-color: #614baf;
+  color: #ffffff;
   font-weight: bold;
   border: none;
   text-align: center;
@@ -382,7 +382,7 @@ h3 {
 }
 
 .notesButton:hover {
-  background-color: #c6a5a0;
+  background-color: #3b3a3f;
 }
 
 /*FOOTER*/
@@ -426,20 +426,20 @@ h3 {
 
 .container.light .dropdownToggle{
   color: #f9f9f9;
-  background-color: #7ba3b1;
+  background-color: #e49a48;
 }
 
 .container.light .dropdownToggle:hover {
-  background-color: #507295;
+  background-color: #a9531a;
 }
 
 .container.light .notesButton {
-  background-color: #7ba3b1;
+  background-color: #e49a48;
   color: white;
 }
 
 .container.light .notesButton:hover {
-  background-color: #507295;
+  background-color: #a9531a;
 }
 
 /*RESPONSIVE*/
