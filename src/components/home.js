@@ -39,31 +39,31 @@ const Home = () => {
             portrait: `${process.env.PUBLIC_URL}/img/pairs/giovanni.png`, 
             text: "Guzzlord's supportive traits focuses on providing stat raises, and sync up next stacks to allies. The playstyle involves using Stockpile to raise defenses, and then spend his defensive stats on either healing all allies or dealing damage and lowering defenses. The pair is actually pretty generically flexible, and only really benefits dark teams with the field ex role. An unexplored facet is how 'Take All' Next will impact gameplay, there maybe new ways to clear thanks to this effect. Just note he'll be expecting his allies to counter stage threats such as status effects, debuffs, or immunities.", 
             name: 'Giovanni & Guzzlord', 
-            link: '' 
+            link: 'https://ng-pomatools.web.app/pairs/14004/79900?s=3&l=140&r=5&p=0&a=15010301&g=AAECAwQFBggKDA8TFhkmKCst' 
         },
         { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/mela.png`, 
             text: "This pair is a damage dealer who focuses on lowering its own defenses in order to deal high damage with the Buddy Move. It effectively serves as an aoe sync move that can double in power if your at max lowered defense. The issue will mainly be avoiding partnering with allies who grant defense buffs, and timing your mystical fire before eating an enemy’s big move with lowered defenses. She only debuffs -1 each turn at base, so getting the max value out her move isn’t too feasible except in longer content.", 
             name: 'Mela & Armarouge', 
-            link: '' 
+            link: 'https://ng-pomatools.web.app/pairs/32000/93600?s=3&l=140&r=6&p=0&a=13010602&g=AAECAwQFBhcZHB0eISIlKDU&x=true' 
         },
         { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/atticus.png`, 
             text: "This pair is a support who provides both damage reduction and enhancement while its currently exclusive Poison Damage Field is active. It also lowers Poison rebuff for all opponents by -2, making it an excellent boost for poison based teams. Tools like flinch and potion do help for main supportive functions. If you want additional Poison DF, you’ll have to get 3/5.", 
             name: 'Atticus & Revavroom', 
-            link: '' 
+            link: 'https://ng-pomatools.web.app/pairs/32800/96600?s=5&l=140&r=6&p=0&a=15010301&g=AAECAwQFDA0OERQWICEkJykq&x=true' 
         },
         { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/poppy.png`, 
             text: "Poppy is a field pair that is more so focused on her buffing and debuffing with her Buddy Move then about being a strong sync contender. Taking care of opponent offenses, ally defenses, and both sides speed stats makes her very handy for stat rank checks. With base extension built in, and 3 settings of steel zone she’s a great option as DPS utility option for steel teams.", 
             name: 'Poppy & Steelix', 
-            link: '' 
+            link: 'https://ng-pomatools.web.app/pairs/30301/20802?s=5&l=140&r=5&p=0&a=13010602&g=AAECAwQFCAwNDicqLC0' 
         },
         { 
             portrait: `${process.env.PUBLIC_URL}/img/pairs/raihan.png`, 
             text: "Raihan is a support pair with a potential to have infinite sandstorm when hit, however the kit is designed around dodging attack moves to buff stats, heal himself, charge gauge, and power allies with move up nexts. The buddy move has impressive range of debuffs and replicable status condition. One glaring issue is that hard encounters often have Piercing Gaze which nullifies Sandaconda’a perks.", 
             name: 'Raihan & Sandaconda', 
-            link: '' 
+            link: 'https://ng-pomatools.web.app/pairs/25702/84400?s=5&l=140&r=6&p=0&a=15010301&g=AAECAwQFGRocJScqKywtLw&x=true' 
         },
     ];
 
