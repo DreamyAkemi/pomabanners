@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pomabanners/static/css/main.ad0aaa89.css",
-    "main.js": "/pomabanners/static/js/main.4a46b510.js",
+    "main.css": "/pomabanners/static/css/main.f5ffa235.css",
+    "main.js": "/pomabanners/static/js/main.aa985ea6.js",
     "static/js/453.b43744f7.chunk.js": "/pomabanners/static/js/453.b43744f7.chunk.js",
-    "static/media/bg_2.jpg": "/pomabanners/static/media/bg_2.3b66435899cbd98b1685.jpg",
+    "static/media/bg_2.jpg": "/pomabanners/static/media/bg_2.55d52dadca905a9c1686.jpg",
     "index.html": "/pomabanners/index.html",
-    "main.ad0aaa89.css.map": "/pomabanners/static/css/main.ad0aaa89.css.map",
-    "main.4a46b510.js.map": "/pomabanners/static/js/main.4a46b510.js.map",
+    "main.f5ffa235.css.map": "/pomabanners/static/css/main.f5ffa235.css.map",
+    "main.aa985ea6.js.map": "/pomabanners/static/js/main.aa985ea6.js.map",
     "453.b43744f7.chunk.js.map": "/pomabanners/static/js/453.b43744f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad0aaa89.css",
-    "static/js/main.4a46b510.js"
+    "static/css/main.f5ffa235.css",
+    "static/js/main.aa985ea6.js"
   ]
 }
